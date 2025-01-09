@@ -88,12 +88,12 @@ export function PopupWidget({ open, onClose }: PopupWidgetProps) {
                 />
                 <input
                   type="hidden"
-                  value={`${userName} sent a message from Nextly`}
+                  value={`${userName} sent a message from landing page`}
                   {...register("subject")}
                 />
                 <input
                   type="hidden"
-                  value="Nextly Template"
+                  value="CoffeeChat Landing Page"
                   {...register("from_name")}
                 />
                 <input
