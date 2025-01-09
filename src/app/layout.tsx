@@ -23,7 +23,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Add favicon */}
+        {/* Example with PNG favicon */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon.ico"
+        />
+
+        {/* ICO fallback */}
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
