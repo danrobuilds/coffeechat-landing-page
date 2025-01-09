@@ -7,7 +7,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PopupWidget }  from "@/components/PopupWidget";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +19,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
@@ -27,7 +27,7 @@ export default function RootLayout({
           <Navbar />
           <div>{children}</div>
           <Footer />
-          <PopupWidget />
+          {/* <PopupWidget open/> */}
         </ThemeProvider>
       </body>
     </html>
