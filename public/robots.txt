@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://getcoffeechat.vercel.app/sitemap.xml
