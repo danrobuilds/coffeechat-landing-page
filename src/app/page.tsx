@@ -21,11 +21,12 @@ export default function Home() {
         Nextly is a free landing page & marketing website template for startups
         and indie projects. Its built with Next.js & TailwindCSS. And its
         completely open-source.
-      </SectionTitle>
+      </SectionTitle> */}
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
 
+      {/* 
       <SectionTitle
         preTitle="Watch a video"
         title="Learn how to fullfil your needs"
