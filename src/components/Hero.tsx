@@ -36,7 +36,7 @@ export const Hero = () => {
               by connecting with brilliant people.
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            Coffeechat helps you network lightning fast by connecting you to individuals with complementary skillsets and experiences.            </p>
+            Coffeechat helps you expand your professional network in no time by connecting you to individuals with complementary skillsets and experiences.            </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               {/* 
@@ -74,25 +74,7 @@ export const Hero = () => {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Join innovators at Harvard, MIT, and Stanford.
-          </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-          <div className="pt-2 text-gray-400 dark:text-gray-400">
-            {/* <AmazonLogo /> */}
-          </div>
-          <div className="text-gray-400 dark:text-gray-400">
-            {/* <VerizonLogo /> */}
-          </div>
-          <div className="text-gray-400 dark:text-gray-400">
-            {/* <MicrosoftLogo /> */}
-          </div>
-          <div className="pt-1 text-gray-400 dark:text-gray-400">
-            {/* <NetflixLogo /> */}
-          </div>
-          <div className="pt-2 text-gray-400 dark:text-gray-400">
-            {/* <SonyLogo /> */}
+            Join professionals that will be your...
           </div>
         </div>
       </Container>

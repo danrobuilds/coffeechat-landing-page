@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Container }  from "@/components/Container";
+import { AnimatedBeamMultipleOutputDemo } from "@/components/AnimatedBeam";
+
 
 interface BenefitsProps {
   imgPos?: "left" | "right";
@@ -16,7 +18,7 @@ interface BenefitsProps {
     }[];
   };
 }
-export const Benefits = (props: Readonly<BenefitsProps>) => {
+export const Benefits1 = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
@@ -25,15 +27,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Image
-              src={data.image}
-              width={521}
-              height={521}
-              alt="Benefits"
-              className={"object-cover"}
-              placeholder="blur"
-              blurDataURL={data.image.src}
-            />
+            <AnimatedBeamMultipleOutputDemo className="object-cover" />
           </div>
         </div>
 
