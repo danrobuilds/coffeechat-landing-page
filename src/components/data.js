@@ -12,47 +12,47 @@ import benefitTwoImg from "../../public/img/benefit-two.png";
 
 const benefitOne = {
   title: "What are you looking for?",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  desc: "Coffeechat uses AI to help you connnect with the professionals that can and are willing to help you the most.",
   image: benefitOneImg,
   bullets: [
-    {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
-    },
-    {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
-    },
-    {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
-    },
+    // {
+    //   title: "Understand your customers",
+    //   desc: "Then explain the first point breifly in one or two lines.",
+    //   icon: <FaceSmileIcon />,
+    // },
+    // {
+    //   title: "Improve acquisition",
+    //   desc: "Here you can add the next benefit point.",
+    //   icon: <ChartBarSquareIcon />,
+    // },
+    // {
+    //   title: "Drive customer retention",
+    //   desc: "This will be your last bullet point in this section.",
+    //   icon: <CursorArrowRaysIcon />,
+    // },
   ],
 };
 
 const benefitTwo = {
   title: "Make it happen.",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  desc: "Expanding your professional network is as easy as sending a text. Conduct outreach and schedule meetings all from the app.",
   image: benefitTwoImg,
   bullets: [
-    {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
-    },
+    // {
+    //   title: "Mobile Responsive Template",
+    //   desc: "Nextly is designed as a mobile first responsive template.",
+    //   icon: <DevicePhoneMobileIcon />,
+    // },
+    // {
+    //   title: "Powered by Next.js & TailwindCSS",
+    //   desc: "This template is powered by latest technologies and tools.",
+    //   icon: <AdjustmentsHorizontalIcon />,
+    // },
+    // {
+    //   title: "Dark & Light Mode",
+    //   desc: "Nextly comes with a zero-config light & dark mode. ",
+    //   icon: <SunIcon />,
+    // },
   ],
 };
 
