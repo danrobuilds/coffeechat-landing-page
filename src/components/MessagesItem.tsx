@@ -7,10 +7,10 @@ interface MessageItemProps {
   title: string;
   text: string;
   themeGradientColor?: string; // Optional prop for theme-based gradient color
-  avatar: string;
+//   avatar: string;
 }
 
-export function MessageItem({ name, title, text, themeGradientColor, avatar }: MessageItemProps) {
+export function MessageItem({ name, title, text, themeGradientColor }: MessageItemProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
