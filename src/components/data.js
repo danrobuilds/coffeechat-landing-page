@@ -15,16 +15,16 @@ const benefitOne = {
   desc: "Coffeechat uses AI to help you connect with the professionals that can and are willing to help you the most.",
   image: benefitOneImg,
   bullets: [
-    // {
-    //   title: "Understand your customers",
-    //   desc: "Then explain the first point breifly in one or two lines.",
-    //   icon: <FaceSmileIcon />,
-    // },
-    // {
-    //   title: "Improve acquisition",
-    //   desc: "Here you can add the next benefit point.",
-    //   icon: <ChartBarSquareIcon />,
-    // },
+    {
+      title: "Intelligent Search",
+      desc: "AI searches skills, experience, and background to the find people you need.",
+      icon:<div><FaceSmileIcon /></div>,
+    },
+    {
+      title: "It's Mutually Beneficial",
+      desc: "Algorithms ensure people the you're connected with can benefit from you as well, so building a relationship is easy.",
+      icon: <ChartBarSquareIcon />,
+    },
     // {
     //   title: "Drive customer retention",
     //   desc: "This will be your last bullet point in this section.",
@@ -35,19 +35,19 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "Make it happen.",
-  desc: "Expanding your professional network is as easy as sending a text. Conduct outreach and schedule meetings all from the app.",
+  desc: "Expanding your professional network is as easy as sending a text.",
   image: benefitTwoImg,
   bullets: [
-    // {
-    //   title: "Mobile Responsive Template",
-    //   desc: "Nextly is designed as a mobile first responsive template.",
-    //   icon: <DevicePhoneMobileIcon />,
-    // },
-    // {
-    //   title: "Powered by Next.js & TailwindCSS",
-    //   desc: "This template is powered by latest technologies and tools.",
-    //   icon: <AdjustmentsHorizontalIcon />,
-    // },
+    {
+      title: "Lightning Fast Outreach",
+      desc: "Conduct outreach and schedule meetings all from within the app.",
+      icon: <DevicePhoneMobileIcon />,
+    },
+    {
+      title: "Stay Connected",
+      desc: "Communicate with everyone you meet in one place.",
+      icon: <AdjustmentsHorizontalIcon />,
+    },
     // {
     //   title: "Dark & Light Mode",
     //   desc: "Nextly comes with a zero-config light & dark mode. ",

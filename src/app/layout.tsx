@@ -10,8 +10,8 @@ import { PopupWidget }  from "@/components/PopupWidget";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CoffeeChat - connecting the tech community",
-  description: "AI helps you to connect with collaborators, jobs, and mentorship from brilliant peopel.",
+  title: "CoffeeChat - Connecting brilliant people",
+  description: "AI helps you to connect with collaborators, jobs, and mentorship from brilliant people.",
 };
 
 export default function RootLayout({
