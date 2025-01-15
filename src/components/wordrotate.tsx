@@ -35,7 +35,7 @@ export function WordRotate({
   }, [words, duration]);
  
   return (
-    <span className="overflow-hidden inline-block relative top-4 align-baseline">
+    <span className="overflow-hidden inline-flex items-baseline">
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}

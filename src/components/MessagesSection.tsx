@@ -26,9 +26,9 @@ export function MessagesSection() {
       text: "I can give feedback on your portfolio any time."
     },
     {
-        name: "Alice Johnson",
-        title: "Designer @ Spotify",
-        text: "I can give feedback on your portfolio any time."
+        name: "Janet Shu",
+        title: "Partner @ IF Ventures",
+        text: "Can we chat about the fintech industry?"
       }
   ];
 

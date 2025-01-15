@@ -17,8 +17,8 @@ interface SectionTitleProps {
 
 export const SectionTitle = () => {
   return (
-    <Container className="flex w-full flex-col mt-8 space-y-12">
-      <div className="grid grid-cols-3 gap-8">
+    <Container className="flex w-full flex-col mt-0 space-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {sections.map((section, index) => (
           <div key={index} className="flex flex-col items-center text-center">
             <h3 className="ax-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
@@ -308,7 +308,7 @@ const sections = [
     ],
   },
   {
-    title: "Job Referrers / Recruiters",
+    title: "Job Referrers",
     items: [
       {icon: Icons.nvidia && <Icons.nvidia />},
       {icon: Icons.bain && <Icons.bain />},

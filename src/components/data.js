@@ -12,7 +12,7 @@ import benefitTwoImg from "../../public/img/benefit-two.png";
 
 const benefitOne = {
   title: "What are you looking for?",
-  desc: "Coffeechat uses AI to help you connnect with the professionals that can and are willing to help you the most.",
+  desc: "Coffeechat uses AI to help you connect with the professionals that can and are willing to help you the most.",
   image: benefitOneImg,
   bullets: [
     // {

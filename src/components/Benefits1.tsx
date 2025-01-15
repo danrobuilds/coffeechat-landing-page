@@ -21,11 +21,9 @@ interface BenefitsProps {
 export const Benefits1 = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
-      <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
+      <Container className="flex flex-wrap mb-10 lg:gap-10 lg:flex-nowrap ">
         <div
-          className={`flex items-center justify-center w-full lg:w-1/2 ${
-            props.imgPos === "right" ? "lg:order-1" : ""
-          }`}>
+          className={`flex items-center justify-center w-full lg:w-1/2 order-last lg:order-first`}>
           <div>
             <AnimatedBeamMultipleOutputDemo className="object-cover" />
           </div>

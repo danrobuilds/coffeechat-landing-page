@@ -34,10 +34,10 @@ export const Navbar = () => {
         </Link>
 
         {/* Right side (Theme switch, nav items, Waitlist) */}
-        <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
+        <div className="flex items-center gap-3 nav__item mr-2 ml-auto lg:ml-0 lg:order-2">
           <ThemeChanger />
 
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
+          <ul className="hidden lg:flex items-center justify-end flex-1 list-none">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link
@@ -102,13 +102,13 @@ export const Navbar = () => {
                 </svg>
               </Disclosure.Button>
 
-              <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+              <Disclosure.Panel className="flex flex-col items-center w-full my-5 lg:hidden">
                 <>
                   {navigation.map((item, index) => (
                     <Link
                       key={index}
                       href="/"
-                      className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                      className="w-full px-4 py-2 text-center text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
                     >
                       {item}
                     </Link>
