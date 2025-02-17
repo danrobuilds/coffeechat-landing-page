@@ -11,45 +11,54 @@ export const Testimonials = () => {
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
-            </p>
-
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
+          <div className="flex flex-col justify-between w-full h-full p-12 relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-xl shadow-2xl border border-gray-800/50">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-sky-500/10 via-purple-500/10 to-pink-500/10 opacity-50" />
+            
+            <div className="relative z-10">
+              <p className="text-2xl leading-normal text-gray-200">
+                "The <Mark>AI-powered matching</Mark> is incredible. Found two co-founders and an angel investor in my first week."
+              </p>
+              <Avatar
+                image={userOneImg}
+                name="Alex Chen"
+                title="Founder, AI Startup (YC W24)"
+              />
+            </div>
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
-            </p>
 
-            <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
-            />
+        <div className="">
+          <div className="flex flex-col justify-between w-full h-full p-12 relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-xl shadow-2xl border border-gray-800/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-sky-500/10 via-purple-500/10 to-pink-500/10 opacity-50" />
+            
+            <div className="relative z-10">
+              <p className="text-2xl leading-normal text-gray-200">
+                "Finally, a platform that understands <Mark>genuine connection</Mark>. This is networking reimagined."
+              </p>
+              <Avatar
+                image={userTwoImg}
+                name="Sarah Liu"
+                title="ML Engineer at Anthropic"
+              />
+            </div>
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
-            </p>
 
-            <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
-            />
+        <div className="">
+          <div className="flex flex-col justify-between w-full h-full p-12 relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-xl shadow-2xl border border-gray-800/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-sky-500/10 via-purple-500/10 to-pink-500/10 opacity-50" />
+            
+            <div className="relative z-10">
+              <p className="text-2xl leading-normal text-gray-200">
+                "The future of <Mark>professional networking</Mark>. LinkedIn feels outdated in comparison."
+              </p>
+              <Avatar
+                image={userThreeImg}
+                name="David Park"
+                title="Tech Lead at Stripe"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -83,13 +92,10 @@ function Avatar(props: Readonly<AvatarProps>) {
   );
 }
 
-function Mark(props: { readonly children: React.ReactNode }) {
+function Mark(props: { children: React.ReactNode }) {
   return (
-    <>
-      {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
-        {props.children}
-      </mark>{" "}
-    </>
+    <mark className="bg-gradient-to-r from-sky-500/20 to-purple-500/20 text-sky-400 rounded-md px-2 py-1">
+      {props.children}
+    </mark>
   );
 }

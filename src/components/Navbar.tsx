@@ -57,15 +57,11 @@ export const Navbar = () => {
           <div className="hidden mr-3 lg:flex nav__item">
             <button
               onClick={() => setModalOpen(true)}
-              className="rounded-md p-1 md:ml-5"
-              style={{
-                background: "linear-gradient(to right, #3b82f6, #ef4444)",
-                backgroundClip: "padding-box",
-                WebkitBackgroundClip: "padding-box",
-              }}
+              className="rounded-xl p-1 md:ml-5 group relative overflow-hidden"
             >
-              <div className="px-6 py-2 text-white bg-transparent rounded-md">
-                Join Waitlist
+              <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-purple-500 transition-all duration-300 group-hover:scale-105" />
+              <div className="px-6 py-2 text-white relative z-10">
+                Early Access
               </div>
             </button>
           </div>
@@ -116,7 +112,7 @@ export const Navbar = () => {
                   {/* Mobile version of Join Waitlist */}
                   <button
                     onClick={() => setModalOpen(true)}
-                    className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                    className="w-full px-6 py-2 mt-3 text-center text-white bg-sky-600 rounded-md lg:ml-5"
                   >
                     Join Waitlist
                   </button>

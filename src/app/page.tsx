@@ -1,8 +1,8 @@
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
-import { Benefits1 } from "@/components/Benefits1";
-import { Benefits2 } from "@/components/Benefits2";
+import { Benefits1, benefitsData as benefits1Data } from "@/components/Benefits1";
+import { Benefits2, benefitsData as benefits2Data } from "@/components/Benefits2";
 import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
@@ -19,8 +19,8 @@ export default function Home() {
       <SectionTitle />
       <br />
 
-      <Benefits1 data={benefitOne} />
-      <Benefits2 imgPos="right" data={benefitTwo} />
+      <Benefits1 data={benefits1Data} />
+      <Benefits2 data={benefits2Data} />
 
       
     </Container>

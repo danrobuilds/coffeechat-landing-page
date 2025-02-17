@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Container }  from "@/components/Container";
 import { AnimatedBeamMultipleOutputDemo } from "@/components/AnimatedBeam";
+import { RocketLaunchIcon, BoltIcon, ChartBarIcon } from '@heroicons/react/24/outline';
 
 
 interface BenefitsProps {
@@ -60,9 +61,12 @@ export const Benefits1 = (props: Readonly<BenefitsProps>) => {
 function Benefit(props: any) {
   return (
       <div className="flex items-start mt-8 space-x-3">
-        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
+        <div className="flex items-center justify-center flex-shrink-0 mt-1 rounded-md w-11 h-11"
+          style={{
+            background: "linear-gradient(135deg, #0ea5e9 0%, #ef4444 100%)",
+          }}>
           {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-indigo-50",
+            className: "w-7 h-7 text-white",
           })}
         </div>
         <div>
@@ -76,3 +80,22 @@ function Benefit(props: any) {
       </div>
   );
 }
+
+const benefitsData = {
+  title: "AI-Powered Relationship Building",
+  desc: "AI analyzes professional profiles, nuanced experience, and mutual interests to help you network as efficiently as possible.",
+  bullets: [
+    {
+      title: "Algorithm",
+      desc: "Get connected with professionals who have exactly what you need—and need what you offer. Cut through the noise.",
+      icon: <RocketLaunchIcon />
+    },
+    {
+      title: "Intent Recognition",
+      desc: "AI understands your networking goals and helps you discover high-value connections who have aligned interests.",
+      icon: <BoltIcon />
+    },
+  ]
+};
+
+export { benefitsData };

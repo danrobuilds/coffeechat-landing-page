@@ -237,12 +237,12 @@ export function PopupWidget({ open, onClose }: PopupWidgetProps) {
                     strokeWidth="3"
                   />
                 </svg>
-                <h3 className="py-5 text-xl text-green-500">
+                <h3 className="py-5 text-xl text-sky-500">
                   Message sent successfully
                 </h3>
                 <p className="text-gray-700 dark:text-gray-200">{Message}</p>
                 <button
-                  className="mt-6 text-indigo-600 focus:outline-none"
+                  className="mt-6 text-sky-600 focus:outline-none"
                   onClick={() => {
                     reset();
                     onClose();
