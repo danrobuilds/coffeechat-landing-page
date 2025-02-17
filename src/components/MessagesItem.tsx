@@ -15,22 +15,26 @@ export function MessageItem({ name, title, text, themeGradientColor }: MessageIt
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!ref.current) return;
+    // Copy ref.current to a variable inside the effect
+    const element = ref.current;
+    
+    if (element) {
+      // Use the copied variable here
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          element.classList.add('animate-fade-in');
+        }
+      });
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible(entry.isIntersecting);
-        });
-      },
-      { threshold: 0.1 }
-    );
+      observer.observe(element);
 
-    observer.observe(ref.current);
-
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
+      // Use the copied variable in cleanup
+      return () => {
+        if (element) {
+          observer.unobserve(element);
+        }
+      };
+    }
   }, []);
 
   return (

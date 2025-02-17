@@ -17,7 +17,7 @@ export const Testimonials = () => {
             
             <div className="relative z-10">
               <p className="text-2xl leading-normal text-gray-200">
-                "The <Mark>AI-powered matching</Mark> is incredible. Found two co-founders and an angel investor in my first week."
+                &ldquo;The <Mark>AI-powered matching</Mark> is incredible. Found two co-founders and an angel investor in my first week.&rdquo;
               </p>
               <Avatar
                 image={userOneImg}

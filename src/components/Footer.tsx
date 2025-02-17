@@ -18,11 +18,10 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-black-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/clogo.png"
-                  alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
+                  src="/img/logo.svg"
+                  alt="Logo"
+                  width={32}
+                  height={32}
                 />
                 <span>CoffeeChat</span>
               </Link>
@@ -109,7 +108,7 @@ export function Footer() {
 
 function ILabsLogo() {
   return (
-    <img
+    <Image
       src="/img/ilabs_logo.svg"
       width="200"
       alt="N"
