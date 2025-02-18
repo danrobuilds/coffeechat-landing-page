@@ -18,10 +18,11 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-black-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="/img/clogo.png"
                   alt="Logo"
                   width={32}
                   height={32}
+                  className="w-8"
                 />
                 <span>CoffeeChat</span>
               </Link>

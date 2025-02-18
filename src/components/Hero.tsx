@@ -35,7 +35,7 @@ export const Hero = () => {
               by connecting with brilliant people.
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Coffeechat is the first AI-powered networking platform that intelligently matches professionals with mutual needs, making networking more efficient than ever before.
+              Coffeechat is an AI-powered networking platform that intelligently matches professionals with mutual needs, making networking more efficient than ever before.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
