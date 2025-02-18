@@ -6,9 +6,10 @@ interface MessageItemProps {
   title: string;
   text: string;
   delay?: number;
+  themeGradientColor?: string;
 }
 
-export function MessageItem({ name, title, text, delay = 0 }: MessageItemProps) {
+export function MessageItem({ name, title, text, delay = 0, themeGradientColor }: MessageItemProps) {
   return (
     <div 
       className="w-56 p-3 bg-white/90 dark:bg-gray-800/90 rounded-xl shadow-lg backdrop-blur-sm
