@@ -40,12 +40,12 @@ export const Navbar = () => {
           <ul className="hidden lg:flex items-center justify-end flex-1 list-none">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link
-                  href="/"
+                <a
+                  href="mailto:drosario@college.harvard.edu"
                   className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
                   {menu}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -59,7 +59,7 @@ export const Navbar = () => {
               onClick={() => setModalOpen(true)}
               className="rounded-xl p-1 md:ml-5 group relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-purple-500 transition-all duration-300 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-red-400 transition-all duration-300 group-hover:scale-105" />
               <div className="px-6 py-2 text-white relative z-10">
                 Early Access
               </div>
