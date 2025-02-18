@@ -19,7 +19,7 @@ interface BenefitsProps {
     }[];
   };
 }
-export const Benefits1 = (props: Readonly<BenefitsProps>) => {
+const Benefits1 = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
       <Container className="flex flex-wrap mb-10 lg:gap-10 lg:flex-nowrap ">
@@ -82,7 +82,7 @@ function Benefit(props: any) {
 }
 
 const benefitsData = {
-  title: "AI-Powered Relationship Building",
+  title: "What are you looking for?",
   desc: "AI analyzes professional profiles, nuanced experience, and mutual interests to help you network as efficiently as possible.",
   bullets: [
     {
@@ -98,4 +98,4 @@ const benefitsData = {
   ]
 };
 
-export { benefitsData };
+export { benefitsData, Benefits1 };

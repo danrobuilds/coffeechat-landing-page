@@ -37,7 +37,7 @@ export const benefitsData = {
   ]
 };
 
-export const Benefits2 = (props: Readonly<BenefitsProps>) => {
+const Benefits2 = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
     <Container className="flex flex-wrap mb-5 lg:gap-10 lg:flex-nowrap">
@@ -98,3 +98,5 @@ function Benefit(props: any) {
     </div>
   );
 }
+
+export { Benefits2 };
