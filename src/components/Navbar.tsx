@@ -61,7 +61,7 @@ export const Navbar = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-red-400 transition-all duration-300 group-hover:scale-105" />
               <div className="px-6 py-2 text-white relative z-10">
-                Early Access
+                Join Waitlist
               </div>
             </button>
           </div>

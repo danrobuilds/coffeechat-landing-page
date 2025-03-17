@@ -199,7 +199,7 @@ export function PopupWidget({ open, onClose }: PopupWidgetProps) {
                         ></path>
                       </svg>
                     ) : (
-                      "Send Message"
+                      "Sign Up"
                     )}
                   </button>
                 </div>
@@ -238,7 +238,7 @@ export function PopupWidget({ open, onClose }: PopupWidgetProps) {
                   />
                 </svg>
                 <h3 className="py-5 text-xl text-sky-500">
-                  Message sent successfully
+                  You're on!
                 </h3>
                 <p className="text-gray-700 dark:text-gray-200">{Message}</p>
                 <button

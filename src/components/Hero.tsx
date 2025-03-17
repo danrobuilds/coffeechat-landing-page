@@ -44,7 +44,7 @@ export const Hero = () => {
                 onClick={() => setModalOpen(true)}
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-sky-500 rounded-md hover:bg-sky-600 transition-colors"
               >
-                Get Early Access
+                Join Waitlist
               </button>
             </div>
           </div>
