@@ -24,7 +24,7 @@ export function Footer() {
                   height={32}
                   className="w-8"
                 />
-                <span>CoffeeChat</span>
+                <span>Coffeechat</span>
               </Link>
             </div>
 

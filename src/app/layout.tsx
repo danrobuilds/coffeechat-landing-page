@@ -10,7 +10,7 @@ import { PopupWidget }  from "@/components/PopupWidget";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CoffeeChat - AI-Powered Professional Networking",
+  title: "Coffeechat - AI-Powered Professional Networking",
   description: "The future of networking: AI-driven connections that matter.",
 };
 

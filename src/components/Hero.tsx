@@ -14,7 +14,7 @@ export const Hero = () => {
   const rotatingWords = [
     "mentors",
     "collaborators",
-    "referrals",
+    "referrers",
     "support"
   ];
 
