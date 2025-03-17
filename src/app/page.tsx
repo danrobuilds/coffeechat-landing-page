@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <Container>
       <Hero />
-      <SectionTitle />
+      {/* <SectionTitle />
       <br />
 
       <Benefits1 data={benefitOne} />
-      <Benefits2 data={benefitTwo} />
+      <Benefits2 data={benefitTwo} /> */}
 
       
     </Container>
