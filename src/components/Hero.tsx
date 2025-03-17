@@ -25,7 +25,7 @@ export const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Find{" "} 
+              Connect with{" "} 
               <WordRotate 
                 words={rotatingWords} 
                 className="inline-block text-red-500"
