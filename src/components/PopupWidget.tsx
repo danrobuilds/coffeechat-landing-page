@@ -168,6 +168,39 @@ export function PopupWidget({ open, onClose }: PopupWidgetProps) {
                   )}
                 </div>
 
+                {/* Interest Reason Field */}
+                <div className="mb-4">
+                  <label
+                    htmlFor="reason"
+                    className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  >
+                    What are you looking for?
+                  </label>
+                  <textarea
+                    id="reason"
+                    rows={1}
+                    placeholder="Tell us briefly why you're interested in CoffeeChat..."
+                    {...register("reason", {
+                      maxLength: {
+                        value: 500,
+                        message: "Your message can't be longer than 500 characters",
+                      },
+                    })}
+                    className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 
+                      bg-white border rounded-md focus:outline-none focus:ring resize-none
+                      ${
+                        errors.reason
+                          ? "border-red-600 focus:border-red-600 ring-red-100"
+                          : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                      }`}
+                  />
+                  {errors.reason && (
+                    <div className="mt-1 text-sm text-red-400">
+                      {errors.reason.message as string}
+                    </div>
+                  )}
+                </div>
+
                 {/* Submit Button */}
                 <div className="mb-3">
                   <button
