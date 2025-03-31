@@ -10,23 +10,17 @@ import { Cta } from "@/components/Cta";
 import { benefitOne, benefitTwo } from "@/components/data";
 import { MessagesSection } from "@/components/MessagesSection";
 
-
 export default function Home() {
   return (
     <Container>
       <Hero />
       {/* <SectionTitle />
       <br />
-
       <Benefits1 data={benefitOne} />
       <Benefits2 data={benefitTwo} /> */}
-
-      
     </Container>
   );
 }
-
-
 
 //extra
 
