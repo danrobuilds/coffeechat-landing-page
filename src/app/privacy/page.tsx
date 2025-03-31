@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
 
         <h2 style={styles.subtitle}>Opt-Out Rights</h2>
         <p style={styles.paragraph}>
-          You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes available on your mobile device or via the mobile application marketplace or network.
+          You may opt out of data collection by deleting your account directly within the app. Alternatively, you can contact us to request the removal of your personal information. We will process such requests in accordance with applicable laws and regulations.
         </p>
 
         <h2 style={styles.subtitle}>Data Retention Policy</h2>
