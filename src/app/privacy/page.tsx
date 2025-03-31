@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
           The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices, and marketing promotions.
         </p>
         <p style={styles.paragraph}>
-          For a better experience, while using the Application, the Service Provider may require you to provide certain personally identifiable information, including but not limited to Email, Name, Location, Professional and Career-related information. The information that the Service Provider requests will be retained and used as described in this privacy policy.
+          For a better experience, while using the Application, the Service Provider may require you to provide certain personally identifiable information, including but not limited to Email, Name, Location, Contacts, Professional and Career-related information. The information that the Service Provider requests will be retained and used as described in this privacy policy.
         </p>
         <p style={styles.paragraph}>
           The Application requires user registration via email and password for authentication. Passwords are securely encrypted and stored using Supabase's authentication infrastructure. The Service Provider does not have access to your plaintext password.
