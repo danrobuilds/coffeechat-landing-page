@@ -1,24 +1,13 @@
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
-import { SectionTitle } from "@/components/SectionTitle";
-import { Benefits1 } from "@/components/Benefits1";
-import { Benefits2 } from "@/components/Benefits2";
-import { Video } from "@/components/Video";
-import { Testimonials } from "@/components/Testimonials";
-import { Faq } from "@/components/Faq";
-import { Cta } from "@/components/Cta";
-import { benefitOne, benefitTwo } from "@/components/data";
-import { MessagesSection } from "@/components/MessagesSection";
 
 export default function Home() {
   return (
-    <Container>
-      <Hero />
-      {/* <SectionTitle />
-      <br />
-      <Benefits1 data={benefitOne} />
-      <Benefits2 data={benefitTwo} /> */}
-    </Container>
+    <main className="min-h-screen">
+      <Container>
+        <Hero />
+      </Container>
+    </main>
   );
 }
 

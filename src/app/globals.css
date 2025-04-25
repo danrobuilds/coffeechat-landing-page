@@ -1,24 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 249, 250, 251;
+  --foreground-rgb: 55, 65, 81; /* textDark: #374151 */
+  --background-rgb: 255, 255, 255; /* background: #FFFFFF */
+  --primary-rgb: 107, 165, 194; /* primary: #6BA5C2 */
+  --secondary-rgb: 147, 197, 253; /* secondary: #93C5FD */
+  --text-muted-rgb: 156, 163, 175; /* textMuted: #9CA3AF */
+  --border-rgb: 229, 231, 235; /* border: #E5E7EB */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Using light mode colors for dark mode for now, adjust as needed */
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-rgb: 24, 24, 27; /* Example dark background */
+    --primary-rgb: 107, 165, 194; 
+    --secondary-rgb: 147, 197, 253;
+    --text-muted-rgb: 156, 163, 175;
+    --border-rgb: 55, 65, 81; /* Using textDark as dark border */
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: transparent;
+  /* Remove explicit background color to let layout.tsx background show through */
+  font-family: 'Inter', sans-serif;
 }
 
 /* Smooth scrolling */
@@ -92,10 +101,15 @@ html {
   animation: pulse-glow 4s ease-in-out infinite;
 }
 
+.font-spartan {
+  font-family: 'League Spartan', sans-serif;
+}
+
 @layer base {
   html,
   body {
-    @apply bg-white dark:bg-trueGray-900;
+    /* Remove explicit background colors, let layout.tsx handle them */
+    @apply text-textDark dark:text-white;
   }
 }
 

@@ -1,16 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import { Container } from "@/components/Container";
 import renderImg from "../../public/img/render.png";
-import { PopupWidget } from "@/components/PopupWidget"; // <--- import your new modal
-import { WordRotate } from "@/components/wordrotate"; 
-
+import { WordRotate } from "@/components/wordrotate";
 
 export const Hero = () => {
-  // State for toggling the modal
-  const [modalOpen, setModalOpen] = useState(false);
-
   const rotatingWords = [
     "mentors",
     "collaborators",
@@ -18,64 +12,50 @@ export const Hero = () => {
   ];
 
   return (
-    <>
-      {/* Your Main Hero Section */}
-      <Container className="flex flex-wrap">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Connect with
-              <br />
-              <WordRotate 
-                words={rotatingWords} 
-                className="inline-block text-red-500"
-                duration={2500}
-              />{" "}
-              <br />
-              10x faster with AI.
-            </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              {/* Coffeechat is the first AI-powered networking platform that intelligently matches professionals with mutual needs, making networking more efficient than ever before. */}
-            </p>
+    <Container className="flex flex-wrap items-center justify-center">
+      <div className="flex flex-col items-center text-center w-full lg:w-5/12 md:mb-8 lg:mb-0">
+        <div className="max-w-xl">
+          <h1 className="text-4xl font-bold leading-snug tracking-tight text-textDark lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white font-spartan">
+            Connect with
+            <br />
+            <WordRotate 
+              words={rotatingWords} 
+              className="inline-block text-primary"
+              duration={2500}
+            />{" "}
+            <br />
+            10x faster with AI.
+          </h1>
+          <p className="py-5 text-xl leading-normal text-textLight lg:text-xl xl:text-2xl dark:text-gray-300">
+            {/* Optional: Add a short description back here if needed */}
+          </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <button
-                onClick={() => setModalOpen(true)}
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-sky-500 rounded-md hover:bg-sky-600 transition-colors"
-              >
-                Get Early Access
-              </button>
-            </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href="https://apps.apple.com/us/app/coffeechat-ai-networking/id6742692440"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-primary text-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity font-spartan"
+            >
+              Download on iPhone <span className="ml-2 text-xl">→</span>
+            </a>
           </div>
         </div>
+      </div>
 
-        {/* Right side illustration */}
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div>
-            <Image
-              src={renderImg}
-              width="616"
-              height="617"
-              className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
+      <div className="flex items-center justify-center w-full lg:w-7/12">
+        <div className="max-w-[350px] md:max-w-[400px] lg:max-w-[300px] xl:max-w-[350px]">
+          <Image
+            src={renderImg}
+            width="350"
+            height="350"
+            className="object-contain w-full h-auto"
+            alt="App Screenshot"
+            loading="eager"
+            placeholder="blur"
+          />
         </div>
-      </Container>
-
-      {/* Additional Content */}
-      {/* <Container>
-        <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
-            Join professionals that will be...
-          </div>
-        </div>
-      </Container> */}
-
-      {/* Popup Widget Modal (centered) */}
-      <PopupWidget open={modalOpen} onClose={() => setModalOpen(false)} />
-    </>
+      </div>
+    </Container>
   );
 };
